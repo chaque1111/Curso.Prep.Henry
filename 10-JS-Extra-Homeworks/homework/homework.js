@@ -10,8 +10,15 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+let resultado=[];
+let valores = Object.values(objeto);
+ let i=0; 
+  for (const key in objeto) {
+resultado.push([key,valores[i]]);
+i++;
+} 
+return resultado;
 }
-
 
 function numberOfCharacters(string) {
   //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
@@ -32,7 +39,7 @@ function capToFront(s) {
 function asAmirror(str) {
   //La función recibe una frase. 
   //Escribe una función que tome la frase recibida y la devuelva de modo tal que se pueda leer de izquierda a derecha 
-  //pero con cada una de sus palabras invertidas, como si fuera un espejo.
+  //pero con cada una de sus palabras invertidas, como si fuera un espo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
 } 
